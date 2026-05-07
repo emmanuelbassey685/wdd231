@@ -30,7 +30,7 @@
 
 .intro h1 {
     color: #f0ebd8;
-    margin-left: 100px;
+    margin-left: 80px;
     font-size: 2rem;
     font-family: var(--primary-font);
     letter-spacing: .2rem;
@@ -41,14 +41,15 @@ nav ul {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    font-family: var(--primary-font);
     background-color: var(--primary-color);
 }
 
 nav a {
     text-decoration: none;
     color: #fff;
-    font-family: var(--secondary-font);
-    letter-spacing: .2rem;
+    font-family: var(--primary-font);
+    letter-spacing: .1rem;
     padding: 1rem;
     display: block;
 }
@@ -70,10 +71,11 @@ nav a:hover {
     color: var(--main-color);
 }
 
-main > h1 {
-    font-family: var(--primary-font);
+main > h2 {
+    font-family: var(--main-font);
     color: var(--main-color);
-    padding: 0 20px;
+    font-size: 2rem;
+    padding: 0 15px;
 }
 
 .grid {
@@ -135,7 +137,7 @@ figcaption {
     color: var(--tertiary-color);
     border: none;
     border-radius: 5px;
-    padding: 5px 50px;
+    padding: 5px 220px;
     font-family: var(--primary-font);
 }
 
