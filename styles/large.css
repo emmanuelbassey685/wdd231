@@ -71,13 +71,6 @@ nav a:hover {
     color: var(--main-color);
 }
 
-main > h2 {
-    font-family: var(--main-font);
-    color: var(--main-color);
-    font-size: 2rem;
-    padding: 0 15px;
-}
-
 .grid {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -90,7 +83,13 @@ main > h2 {
     border-radius: 3px;
 }
 
-.section h2{
+section h1 {
+    font-family: var(--main-font);
+    color: var(--main-color);
+    text-align: center;
+}
+
+.section h2 {
     background-color: var(--secondary-color);
     padding: 7px;
     text-align: center;
