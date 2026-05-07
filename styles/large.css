@@ -83,7 +83,7 @@ nav a:hover {
     border-radius: 3px;
 }
 
-section h1 {
+h1 {
     font-family: var(--main-font);
     color: var(--main-color);
     text-align: center;
