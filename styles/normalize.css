@@ -40,6 +40,12 @@
     font-size: 2em;
     margin: 0.67em 0;
   }
+
+  h2 {
+    font-size: 1.5em;
+    margin: 0.1rem 0;
+    padding: 0 15px;
+  }
   
   /* Grouping content
      ========================================================================== */
