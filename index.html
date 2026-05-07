@@ -3,10 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>wdd231</title>
+    <meta name="description" content="This is a course home page for Week01 wdd231. It contains details of myself and the courses.">
+    <meta name="author" content="Bassey Emmanuel">
+    <meta property="og:title" content="Home | Bassey Emmanuel | WDD231">
+    <meta property="og:description" content="A student homepage for Bassey Emmanuel, containing information and courses I am currently taking.">
+    <meta property="og:image" content="https://bassey-emmanuel.github.io/wdd231/images/profile.jpeg">
+    <meta property="og:url" content="https://bassey-emmanuel.github.io/wdd231/">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <script src="scripts/display-courses.js" defer></script>
+    <script src="scripts/menu-button.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <link rel="icon" href="favicon.ico">
+    <title>Home | Bassey Emmanuel | WDD231</title>
 </head>
 <body>
-    <h1>Welcome to WDD231</h1>
-    <p>This is the homepage for the WDD231 course.</p>
+    <header>
+        <section class="intro">
+            <img src="images/profile.jpeg" alt="A profile photo of Bassey Emmanuel" width="150">
+            <h1>Bassey Emmanuel</h1>
+            <button type="button" id="hamButton" aria-label="Open Menu"></button>
+        </section>
+        <nav id="nav">
+            <ul>
+                <li><a href="index.html" class="selected" target="_blank">Home</a></li>
+                <li><a href="chamber/index.html" target="_blank">Chamber Project</a></li>
+                <li><a href="final-project/index.html" target="_blank">Final Project</a></li>                
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Home</h1>
+
+        <div class="grid">
+            <section class="section one">
+                <h2>About Me</h2>
+                <p> My name is Bassey Emmanuel, and I am a student at BYUI, currently pursuing a degree in Software Development and computer programming. I have a passion for technology and enjoy learning about new advancements in the field. In my free time, I like to explore different programming languages and work on personal projects to enhance my skills. I am excited to be taking this course and look forward to gaining more knowledge and experience in web development.
+                </p>
+            </section>
+            <section class="section two">
+                <h2>Student Photo</h2>
+                <figure>
+                    <img src="images/nigerianflag.jpg" alt="Nigeria Symbol" width="250" >                    
+                </figure>
+            </section>
+            <section class="section three">
+                <h2>Web Certificate Courses</h2>
+                <div class="btns">
+                    <button aria-label="All Courses" id="all-btn" type="button" class="btn">All</button>
+                    <button aria-label="CSE Courses" id="cse-btn" type="button" class="btn">CSE</button>
+                    <button aria-label="WDD Courses" id="wdd-btn" type="button" class="btn">WDD</button>
+                </div>
+                <p id="credit"></p>
+                <div id="container"></div>
+            </section>
+        </div>
+        <dialog id="course-details">
+            <div>
+                <h2></h2>
+                <button id="closeButton">❌</button>
+            </div>
+            <h3 id="course-name"></h3>
+            <p id="credits"></p>
+            <p id="certificate"></p>
+            <p id="course-info"></p>
+            <p id="tools"></p>
+        </dialog>
+    </main>
+    <footer>
+        <p>&copy;  <span id="currentyear"></span> | Bassey Emmanuel | Lagos, Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>
