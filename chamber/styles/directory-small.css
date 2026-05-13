@@ -1,0 +1,103 @@
+@media (max-width: 730px) {
+    :root {
+        --main-color: #344e41;
+        --primary-color: #3a5a40;
+        --secondary-color: #588157;
+        --light-green: #a3b18a;
+        --ash-color: #dad7cd;
+        --main-font: "Josefin Sans";
+        --primary-font: "Lato";
+        --secondary-font: "Pacifico";
+    }
+
+    nav {
+        flex-direction: row; 
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap; 
+        padding: 10px 20px;
+    }
+
+    nav a {
+        display: block;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .main-header h1 {
+        font-size: 1.5rem;
+    }
+
+    #hamButton {
+        display: block;
+        background: none;
+        border: none;
+        color: #000;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+
+    #hamButton::before {
+        content: "☰";
+    }
+
+    #hamButton.active::before {
+        content: "✕";
+    }
+
+    #navLinks {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    #navLinks.active {
+        display: flex;
+    }
+
+    #navLinks li {
+        padding-top: 17px;
+        border-top: 1px solid #000;
+        width: 100%;
+        text-align: center;
+    }
+
+    .logo img {
+        aspect-ratio: 16/9;
+        width: 60px;
+        height: 60px;
+        margin-left: -50px;
+    }
+
+    .logo h1 {
+        font-size: 1.5rem;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: space-between;
+        gap: 20px;
+    }
+
+    .social-icons {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .list section {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
