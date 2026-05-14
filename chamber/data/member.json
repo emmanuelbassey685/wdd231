@@ -6,7 +6,7 @@
       "phone": "555-123-4567",
       "website": "https://greentechsolutions.com",
       "image": "https://emmanuel-bassey.github.io/wdd231/chamber/images/member-logo.jpg",
-      "membershipLevel": 3,
+      "membershipLevel": "Gold",
       "description": "A leader in sustainable energy products and services."
     },
     {
@@ -15,7 +15,7 @@
       "phone": "555-234-5678",
       "website": "https://bakersdelight.com",
       "image": "https://emmanuel-bassey.github.io/wdd231/chamber/images/member-logo.jpg",
-      "membershipLevel": 1,
+      "membershipLevel": "Bronze",
       "description": "Family-owned bakery with fresh pastries daily."
     },
     {
@@ -24,7 +24,7 @@
       "phone": "555-345-6789",
       "website": "https://technest.io",
       "image": "https://emmanuel-bassey.github.io/wdd231/chamber/images/member-logo.jpg",
-      "membershipLevel": 2,
+      "membershipLevel": "Silver",
       "description": "A coworking space for startups and freelancers."
     },
     {
@@ -33,7 +33,7 @@
       "phone": "555-456-7890",
       "website": "https://mountaingear.com",
       "image": "https://emmanuel-bassey.github.io/wdd231/chamber/images/member-logo.jpg",
-      "membershipLevel": 2,
+      "membershipLevel": "Silver",
       "description": "Top-quality outdoor gear and camping equipment."
     },
     {
@@ -42,7 +42,7 @@
       "phone": "555-567-8901",
       "website": "https://healthylivingspa.com",
       "image": "https://emmanuel-bassey.github.io/wdd231/chamber/images/member-logo.jpg",
-      "membershipLevel": 3,
+      "membershipLevel": "Gold",
       "description": "Relaxation and rejuvenation for body and mind."
     },
     {
@@ -51,7 +51,7 @@
       "phone": "555-678-9012",
       "website": "https://edubright.com",
       "image": "https://emmanuel-bassey.github.io/wdd231/chamber/images/member-logo.jpg",
-      "membershipLevel": 1,
+      "membershipLevel": "Bronze",
       "description": "After-school tutoring and academic support services."
     },
     {
@@ -60,7 +60,7 @@
       "phone": "555-789-0123",
       "website": "https://localprintstudio.com",
       "image": "https://emmanuel-bassey.github.io/wdd231/chamber/images/member-logo.jpg",
-      "membershipLevel": 1,
+      "membershipLevel": "Bronze",
       "description": "Printing, branding, and custom merchandise."
     },
     {
@@ -69,7 +69,7 @@
       "phone": "555-789-0123",
       "website": "https://localprintstudio.com",
       "image": "https://emmanuel-bassey.github.io/wdd231/chamber/images/member-logo.jpg",
-      "membershipLevel": 1,
+      "membershipLevel": "Bronze",
       "description": "Printing, branding, and custom merchandise."
     }
   ]

@@ -10,16 +10,18 @@
     <link rel="icon" href="images/logo.jpg">
     <meta property="og:title" content="Lagos | Chamber of Commerce">    
     <meta property="og:type" content="website">    
-    <meta property="og:image" content="https://emmanuel-bassey.github.io/wdd231/chamber/images/boi-logo.jpg">
-    <meta property="og:url" content="https://emmanuel-bassey.github.io/wdd231/chamber/">
+    <meta property="og:image" content="https://emmanuelbassey685.github.io/wdd231/chamber/images/imagelogo.jpg">
+    <meta property="og:url" content="https://emmanuelbassey685.github.io/wdd231/chamber/">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Pacifico&display=swap" rel="stylesheet">
     <script src="../scripts/date.js" defer></script>
-    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/discover.js" type="module"></script>
     <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="stylesheet" href="styles/directory-large.css">
     <link rel="stylesheet" href="styles/directory-small.css">
+    <link rel="stylesheet" href="styles/discover.css">
+    <link rel="stylesheet" href="styles/discover-large.css">
     <title>Business Directory | Lagos | Chamber of Commerce</title>
 </head>
 <body>
@@ -40,14 +42,9 @@
         </nav>
     </header>
     <main>
-        <section class="main-header">
-            <h1>Business Directory</h1>
-            <div class="btns">
-                <button id="grid" aria-pressed="true" aria-label="Show items in grid view">Grid</button>
-                <button id="list" aria-pressed="false" aria-label="Show items in list view">List</button>
-            </div>
-        </section>
-        <div id="cards" class="grid"></div>
+        <h1>Discover</h1>
+        <p id="last-visited"></p>
+        <div id="place-container" class="place-container"></div>
     </main>
     <footer>
         <section class="company-details">

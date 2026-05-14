@@ -1,0 +1,47 @@
+@media (min-width: 641px) {
+    .place-container section {
+        display: grid;
+        grid-template-areas: 
+        "image name"
+        "image address"
+        "image description"
+        ;
+    }
+
+    .place-container section address {
+        margin-top: -6rem;
+        margin-left: 1rem;
+    } 
+
+    .place-container section p {
+        margin-top: -4rem;
+        margin-left: 1rem;
+    }
+
+    .place-container section img {
+        transition: .75s;
+    }
+
+    .place-container section img:hover {
+        transform: scale(1.05);
+        cursor: pointer;
+    }
+}
+
+@media (min-width: 1024px) {
+    .place-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .place-container section img {
+        transition: .75s;
+    }
+
+    .place-container section img:hover {
+        transform: scale(1.05);
+        cursor: pointer;
+    }
+
+}

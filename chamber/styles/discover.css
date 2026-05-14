@@ -1,0 +1,80 @@
+:root {
+    --main-color: #344e41;
+    --primary-color: #3a5a40;
+    --secondary-color: #588157;
+    --light-green: #a3b18a;
+    --ash-color: #dad7cd;
+    --main-font: "Josefin Sans";
+    --primary-font: "Lato";
+    --secondary-font: "Pacifico";
+}
+
+/* .place-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+} */
+
+main {
+    margin: 2rem;
+}
+
+main > h1 {
+    text-align: center;
+    font-family: var(--main-font);
+    color: var(--main-color);
+}
+
+main > p {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #344e41;
+    font-family: var(--primary-font);
+}
+
+.place-container section {
+    margin: 0 auto;
+    box-shadow: 1px 3px 8px #545353;
+    margin-bottom: 2rem;
+    padding: 20px;
+    background-color: var(--ash-color);
+    border-radius: 10px;
+
+    display: grid;
+    grid-template-areas: 
+    "name"
+    "image"
+    "address"
+    "description"
+    ;
+}
+
+.place-container section img {
+    width: 100%;
+    border-radius: 10px;
+    grid-area: image;
+}
+
+.place-container section h2 {   
+    text-align: center;
+    padding-bottom: 10PX;
+    font-family: var(--main-font);
+    grid-area: name;
+}
+
+
+.place-container section address {
+    text-align: center;
+    padding-bottom: 10px;
+    grid-area: address;
+    
+}
+
+
+.place-container section p {
+    text-align: center;
+    font-family: var(--primary-font);
+    grid-area: description;
+}

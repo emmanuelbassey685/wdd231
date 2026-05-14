@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:locale" content="en_US">
+    <meta name="author" content="Bassey, Emmanuel">
+    <meta name="description" content="This website will serve as a resource hub for businesses in the city of Lagos.">
+    <meta property="og:description" content="This website will serve as a resource hub for businesses in the city of Lagos.">
+    <link rel="icon" href="images/logo.jpg">
+    <meta property="og:title" content="Lagos | Chamber of Commerce">    
+    <meta property="og:type" content="website">    
+    <meta property="og:image" content="https://emmanuelbassey685.github.io/wdd231/chamber/images/imagelogo.jpg">
+    <meta property="og:url" content="https://emmanuelbassey685.github.io/wdd231/chamber/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Pacifico&display=swap" rel="stylesheet">
+    <script src="../scripts/date.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+    <script src="scripts/timestamp.js" defer></script>
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/directory-large.css">
+    <link rel="stylesheet" href="styles/directory-small.css">
+    <link rel="stylesheet" href="styles/join-large.css">
+    <title>Business Directory | Lagos | Chamber of Commerce</title>
+</head>
+<body>
+    <header>
+        <nav id="nav">
+            <div class="logo">
+                <img src="images/imagelogo.jpg" alt="Lagos Company Logo" loading="lazy" width="80" height="80" />
+                <h1>Lagos<br /><span class="h1-minor">Chamber of Commerce</span></h1>
+            </div>
+            <button id="hamButton" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks"></button>
+            <ul id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><button type="button" aria-label="Toggle dark mode">🌓</button></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Join Our Chamber</h1>
+        <p>Become a member and unlock a wealth of benefits to help your business thrive and contribute to our community's growth.</p>
+        <div class="membership-container">
+            <div class="membership-form">
+                <form method="get" action="thankyou.html">
+                    <h2>Membership Application</h2>
+                    <p>Fill out the form below to apply for membership.</p>
+                    <div class="name-section">
+                        <div>
+                            <label for="firstName">First Name</label><br>
+                            <input type="text" id="firstName" title="Applicant's First Name" name="firstName" required autocomplete="given-name" value>
+                        </div>
+                        <div>
+                            <label for="lastName">Last Name</label><br>
+                            <input type="text" id="lastName" name="lastName" title="Applicant's Last Name" required autocomplete="family-name" value>
+                        </div>
+                    </div>
+                    <div class="organization">
+                        <label for="title">Organizational Title</label><br>
+                        <input type="text" id="title" name="title" title="Applicant's Organizational Title" autocomplete="organization-title" pattern="[A-Za-z\s-]{7,}" value>
+                    </div>
+                    <div class="contact">
+                        <div>
+                            <label for="email">Email Address</label><br>
+                            <input type="email" id="email" name="email" title="Applicant's Email Address" required autocomplete="email" placeholder="example@company.com" value>
+                        </div>
+                        <div>
+                            <label for="phone">Mobile Phone Number</label><br>
+                            <input type="tel" id="phone" name="phone" title="Applicant's Mobile Phone Number" required autocomplete="tel" value>
+                        </div>
+                    </div>
+                    <div class="business-info">
+                        <label for="businessName">Business/Organization Name</label><br>
+                        <input type="text" id="businessName" name="businessName" title="Applicant's Business Name" required autocomplete="organization">
+                    </div>
+                    <div class="member-level">
+                        <p>Level</p>
+                        <input type="radio" name="membership" value="np-member" id="np-member">
+                        <label for="np-member">NP Membership</label><br><br>
+                        <input type="radio" id="bronze-member" name="membership" value="bronze-member">
+                        <label for="bronze-member">Bronze Membership</label><br><br>
+                        <input type="radio" id="silver-member" name="membership" value="silver-member">
+                        <label for="silver-member">Silver Membership</label><br><br>
+                        <input type="radio" id="gold-member" name="membership" value="gold-member">
+                        <label for="gold-member">Gold Membership</label><br><br>
+                    </div>
+                    <div class="business-desc">
+                        <label for="description">Business/Organization Description</label><br>
+                        <textarea id="description" name="description" title="Business/Oranization's Description"></textarea>
+                    </div>
+                    <input type="hidden" id="formTimeStamp" name="timestamp">
+                    <button type="submit" value="submit">Submit Application</button>
+                </form>
+            </div>
+            <div class="membership-details">
+                <h2>Membership Tiers</h2>
+                <div>
+                    <h3>NP Membership</h3>
+                    <p class="fee">No Fee</p>
+                    <p>For registered non-profit organizations dedicated to community service.</p>
+                    <button id="open-modal1">View Benefits</button>
+                </div>
+                <div>
+                    <h3>Bronze Membership</h3>
+                    <p class="fee">$100/year</p>
+                    <p>Ideal for small businesses and startups looking to connect.</p>
+                    <button id="open-modal2">View Benefits</button>
+                </div>
+                <div>
+                    <h3>Silver Membership</h3>
+                    <p class="fee">$250/year</p>
+                    <p>Great for growing businesses seeking more visibility and resources.</p>
+                    <button id="open-modal3">View Benefits</button>
+                </div>
+                <div>
+                    <h3>Gold Membership</h3>
+                    <p class="fee">$500/year</p>
+                    <p>Maximum exposure and benefits for established businesses.</p>
+                    <button id="open-modal4">View Benefits</button>
+                </div>
+            </div>
+        </div>
+        <dialog id="np-dialog" class="dialogs">
+            <h2>NP Membership Benefits</h2>
+            <p>No Fee - For registered non-profit organizations dedicated to community service.</p>
+            <p>✔ Basic Directory Listing</p>
+            <p>✔ Community Newsletter Subscription</p>
+            <p>✔ Access to Non-Profit Roundtables</p>
+            <button class="closeButton1" type="button">Close</button>
+        </dialog>
+        <dialog id="bronze-dialog" class="dialogs">
+            <h2>Bronze Membership Benefits</h2>
+            <p>$100/year - Ideal for small businesses and startups looking to connect.</p>
+            <p>✔ Standard Directory Listing</p>
+            <p>✔ Member-Only Event Invites</p>
+            <p>✔ Discount on Chamber Workshops</p>
+            <p>✔ Monthly E-Newsletter</p>
+            <button class="closeButton2" type="button">Close</button>
+        </dialog>
+        <dialog id="silver-dialog" class="dialogs">
+            <h2>Silver Membership Benefits</h2>
+            <p>$250/year - Great for growing businesses seeking more visibility and resources.</p>
+            <p>✔ Enhanced Directory Listing</p>
+            <p>✔ Social Media Spotlight (1x/year)</p>
+            <p>✔ Access to Business Seminars</p>
+            <p>✔ Networking Event Discounts</p>
+            <button class="closeButton3" type="button">Close</button>
+        </dialog>
+        <dialog id="gold-dialog" class="dialogs">
+            <h2>Gold Membership Benefits</h2>
+            <p>$500/year - Maximum exposure and benefits for established businesses.</p>
+            <p>✔ Premium Directory Listing with Logo</p>
+            <p>✔ Featured Member on Homepage (Rotation)</p>
+            <p>✔ Free Access to All Chamber Trainings</p>
+            <p>✔ Event Sponsorship Opportunities</p>
+            <p>✔ Dedicated Chamber Liaison</p>
+            <button class="closeButton4" type="button">Close</button>
+        </dialog>
+    </main>
+    <footer>
+        <section class="company-details">
+            <h3>Lagos Chamber of Commerce</h3>
+            <p>10 Dr. Nurudeen Olowopopo</p>
+            <p>Lagos 101233, Lagos</p>
+            <p>info@lagoscc.org</p>
+            <p>(234) 904 001 9094</p>
+        </section>
+        <section class="social-icons">
+            <a href="https://linkedin.com" aria-label="LinkedIn"><img src="images/youtube-app-icon.svg" width="40px" alt="LinkedIn Icon"></a>
+            <a href="https://twitter.com" aria-label="Twitter"><img src="images/twitter-app-icon.svg" width="40px" alt="Twitter Icon"></a>
+            <a href="https://youtube.com" aria-label="YouTube"><img src="images/linkedin-app-icon.svg" width="45px" alt="YouTube Icon"></a>
+        </section>
+        <section class="my-details">
+            <p>WDD231 Class project</p>
+            <p>Bassey, Emmanuel</p>
+            <p>&copy;  <span id="currentyear"></span> Lagos Chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </section>
+    </footer>
+</body>
+</html>

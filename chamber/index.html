@@ -10,16 +10,19 @@
     <link rel="icon" href="images/logo.jpg">
     <meta property="og:title" content="Lagos | Chamber of Commerce">    
     <meta property="og:type" content="website">    
-    <meta property="og:image" content="https://emmanuel-bassey.github.io/wdd231/chamber/images/boi-logo.jpg">
-    <meta property="og:url" content="https://emmanuel-bassey.github.io/wdd231/chamber/">
+    <meta property="og:image" content="https://emmanuelbassey685.github.io/wdd231/chamber/images/imagelogo.jpg">
+    <meta property="og:url" content="https://emmanuelbassey685.github.io/wdd231/chamber/">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Pacifico&display=swap" rel="stylesheet">
     <script src="../scripts/date.js" defer></script>
-    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/index.js" defer></script>
+    <script src="scripts/filter-members.js" defer></script>
     <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="stylesheet" href="styles/directory-large.css">
     <link rel="stylesheet" href="styles/directory-small.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/index-small.css">
     <title>Business Directory | Lagos | Chamber of Commerce</title>
 </head>
 <body>
@@ -27,7 +30,7 @@
         <nav id="nav">
             <div class="logo">
                 <img src="images/imagelogo.jpg" alt="Lagos Company Logo" loading="lazy" width="80" height="80" />
-                <h1>Lagos<br /><span class="h1-minor">Chamber of Commerce</span></h1>
+                <h1>Lagos<br><span class="h1-minor">Chamber of Commerce</span></h1>
             </div>
             <button id="hamButton" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks"></button>
             <ul id="navLinks">
@@ -38,16 +41,58 @@
                 <li><button type="button" aria-label="Toggle dark mode">🌓</button></li>
             </ul>
         </nav>
+        <div class="wlc-container">
+            <img src="images/hero-image.jpg" alt="A panoramic view of Lagos city skyline">
+            <section class="wlc-msg">
+                <h1>Welcome to the Lagos Chamber of Commerce</h1>
+                <p>Supporting Local Businesses and Building a Stronger Community Together<br> <span>Ready to grow your business?</span></p>
+            </section>
+            <a href="join.html" class="cta-button">Join the Chamber Today!</a>
+        </div>
     </header>
     <main>
-        <section class="main-header">
-            <h1>Business Directory</h1>
-            <div class="btns">
-                <button id="grid" aria-pressed="true" aria-label="Show items in grid view">Grid</button>
-                <button id="list" aria-pressed="false" aria-label="Show items in list view">List</button>
-            </div>
-        </section>
-        <div id="cards" class="grid"></div>
+        <h1 id="h1">Home</h1>
+        <div class="information-section">
+            <section class="events information">
+                <h2>Events</h2>
+                <section>
+                    <h3>Annual Business Expo</h3>
+                    <p>May 30, 2026 | 09:00 AM - 04:00 PM</p>
+                    <p>San Miguel Convention Center</p>
+                    <p>Network with local businesses and explore new opportunities.</p>
+                </section>
+                <section>
+                    <h3>Small Business Workshop</h3>
+                    <p>May 28, 2026 | 09:00 AM - 02:00 PM</p>
+                    <p>Conference Room Fist Floor, Lagos Chamber of Commerce Complex</p>
+                    <p>Learn practical marketing tips for your business.</p>
+                </section>
+            </section>
+            <section class="weather information">
+                <h2>Current Weather</h2>
+                <section class="data">
+                    <img src="" alt="" id="icon">
+                    <div>
+                        <p id="temp"></p>
+                        <p id="desc"></p>
+                        <p id="high"></p>
+                        <p id="low"></p>
+                        <p id="humidity"></p>
+                        <p id="sunrise"></p>
+                        <p id="sunset"></p>
+                    </div>
+                </section>
+            </section>
+            <section class="forecast information">
+                <h2>Weather Forecast</h2>
+                <section>
+                    <p id="today"></p>
+                    <p id="tomorrow"></p>
+                    <p id="next-t"></p>
+                </section>
+            </section>
+        </div>
+        <div id="card-container" class="card-container"></div>
     </main>
     <footer>
         <section class="company-details">

@@ -1,0 +1,228 @@
+:root {
+    --main-color: #344e41;
+    --primary-color: #3a5a40;
+    --secondary-color: #588157;
+    --light-green: #a3b18a;
+    --ash-color: #dad7cd;
+    --main-font: "Josefin Sans";
+    --primary-font: "Lato";
+    --secondary-font: "Pacifico";
+}
+
+main > h1 {
+    text-align: center;
+    font-family: var(--primary-font);
+    font-size: 3rem;
+    font-weight: 900;
+    color: var(--main-color);
+}
+
+main > p {
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: var(--main-font);
+    color: var(--primary-color);
+}
+
+.membership-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.membership-form {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    border: 1px solid rgb(152, 151, 152);
+    margin: 2.5rem 1.2rem;
+    padding: 1.5rem;
+    background-color: #f8eeee;
+}
+
+form > h2 {
+    font-family: var(--primary-font);
+    font-size: 1.8rem;
+    padding-bottom: 8px;
+    color: var(--main-color);
+}
+
+form > p {
+    font-family: var(--primary-font);
+    margin-bottom: 2.5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.name-section, .contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+form label {
+    font-size: 1.1rem;
+    font-family: var(--primary-font);
+    color: #000;
+}
+
+.business-info input, 
+.contact input, 
+.organization input, 
+.name-section input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgb(152, 151, 152);
+    border-radius: 5px;
+    margin-bottom: 1.6rem;
+    font-size: 1.2rem;
+    font-family: var(--primary-font);
+}
+
+.member-level p {
+    font-size: 1.2rem;
+    color: #000;
+    margin-bottom: .6rem;
+    margin-left: 5px;
+    font-family: var(--primary-font);
+}
+
+.member-level input {
+    margin-right: 0px;
+    width: 30px;
+}
+
+form textarea {
+    width: 100%;
+    height: 6rem;
+    border-radius: 5px;
+    margin-bottom: 1.6rem;
+    font-size: 1.2rem;
+    font-family: var(--primary-font);
+    border: 1px solid rgb(152, 151, 152)
+}
+
+form button {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--main-color);
+    color: #fff;
+    font-family: var(--primary-font);
+    font-size: 1.2rem;
+    transition: .2s;
+}
+
+form button:hover {
+    cursor: pointer;
+    background-color: #fff;
+    color: #344e41;
+    border: 2px solid #344e41;
+}
+
+.membership-details {
+   margin: 2rem;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+
+.membership-details > h2 {
+    font-family: var(--primary-font);
+    color: #344e41;
+}
+
+@keyframes changeBackground {
+    0%{
+        background-color: #f8eeee;
+        color: #000;
+    }
+    25%{
+        background-color: #f4faf4;
+        color: #000; 
+    }
+    100% {
+        background-color: #ffffff;
+        color: #000;
+    }
+}
+
+.membership-details div {
+    background-color: #f8eeee;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 3px #dad7cd;
+    animation: changeBackground 5s ease-in-out infinite alternate;
+}
+
+.membership-details div h3 {
+    font-family: var(--main-font);
+    color: #344e41;
+}
+
+.membership-details div .fee {
+    padding: 10px 0;
+    font-family: var(--secondary-font);
+    color: #344e41;
+}
+
+.membership-details div p {
+    padding-bottom: 10px;
+    font-family: var(--primary-font);
+}
+
+.membership-details div button {
+    width: 100%;
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid #344e41;
+    background-color: #f8eeee;
+    font-family: var(--main-font);
+    transition: .5s;
+}
+
+.membership-details div button:hover {
+    cursor: pointer;
+    background-color: #344e41;
+    color: #fff;
+}
+
+.dialogs {
+    margin: 9rem auto;
+    padding: 40px 40px 20px 40px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, .7);
+    color: #fff;
+}
+
+.dialogs h2 {
+    font-family: var(--main-font);
+    padding-bottom: 10px;
+}
+
+.dialogs > p {
+    padding-bottom: 20px;
+    font-family: var(--primary-font);
+}
+
+.dialogs button {
+    float: right;
+    padding: 8px 20px;
+    border: none;
+    background-color: #fff;
+    color: #344e41;
+    border-radius: 5px;
+    transition: .2s;
+}
+
+.dialogs button:hover {
+    cursor: pointer;
+    transform: scale(1.06);
+}
+
+::backdrop {
+    backdrop-filter: blur(5px);
+}

@@ -3,31 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:locale" content="en_US">
     <meta name="author" content="Bassey, Emmanuel">
     <meta name="description" content="This website will serve as a resource hub for businesses in the city of Lagos.">
-    <meta property="og:description" content="This website will serve as a resource hub for businesses in the city of Lagos.">
     <link rel="icon" href="images/logo.jpg">
-    <meta property="og:title" content="Lagos | Chamber of Commerce">    
-    <meta property="og:type" content="website">    
-    <meta property="og:image" content="https://emmanuel-bassey.github.io/wdd231/chamber/images/boi-logo.jpg">
-    <meta property="og:url" content="https://emmanuel-bassey.github.io/wdd231/chamber/">
+    <meta property="og:title" content="Lagos | Chamber of Commerce">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="This website will serve as a resource hub for businesses in the city of Lagos.">
+    <meta property="og:image" content="https://emmanuelbassey685.github.io/wdd231/chamber/images/imagelogo.jpg">
+    <meta property="og:url" content="https://emmanuelbassey685.github.io/wdd231/chamber/">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Pacifico&display=swap" rel="stylesheet">
     <script src="../scripts/date.js" defer></script>
-    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
+    <script src="scripts/navButton.js" defer></script>
     <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="stylesheet" href="styles/directory-large.css">
     <link rel="stylesheet" href="styles/directory-small.css">
-    <title>Business Directory | Lagos | Chamber of Commerce</title>
+    <link rel="stylesheet" href="styles/thankyou.css">
+    <title>Home | Lagos | Chamber of Commerce</title>
 </head>
 <body>
     <header>
         <nav id="nav">
             <div class="logo">
                 <img src="images/imagelogo.jpg" alt="Lagos Company Logo" loading="lazy" width="80" height="80" />
-                <h1>Lagos<br /><span class="h1-minor">Chamber of Commerce</span></h1>
+                <h1>
+                Lagos<br><span class="h1-minor">Chamber of Commerce</span>
+                </h1>
             </div>
             <button id="hamButton" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks"></button>
             <ul id="navLinks">
@@ -40,14 +44,17 @@
         </nav>
     </header>
     <main>
-        <section class="main-header">
-            <h1>Business Directory</h1>
-            <div class="btns">
-                <button id="grid" aria-pressed="true" aria-label="Show items in grid view">Grid</button>
-                <button id="list" aria-pressed="false" aria-label="Show items in list view">List</button>
+        <div class="thankyou-container">
+            <h1>Thank You for Your Application!</h1>
+            <p>We have received your membership application. Here's a summary of your submission:</p>
+            <div class="member-details">
+                <!--Dynamically display items-->
             </div>
-        </section>
-        <div id="cards" class="grid"></div>
+            <p class="l-para">We will review your application and contact you soon. If you have any immediate questions, feel free to reach out to us.</p>
+            <div class="home-btn">
+                <a href="index.html" class="homeButton">Back to Homepage</a>
+            </div>
+        </div>
     </main>
     <footer>
         <section class="company-details">
