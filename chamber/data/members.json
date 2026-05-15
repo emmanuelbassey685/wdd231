@@ -1,76 +1,84 @@
 {
   "members": [
     {
-      "name": "GreenVil Solutions",
-      "address": "123 Innovation Way, Greentown, GT 56789",
-      "phone": "555-123-4567",
-      "website": "https://greentechsolutions.com",
+      "name": "Bank Of Industries",
+      "address": "23 Marina Street Lagos Island, Lagos, Nigeria (P.M.B 12855).",
+      "email": "info@bankofindustries.com",
+      "phone": "+234-1-456-7890 (Head Office), +234-1-456-7891 (Customer Service)",
+      "website": "https://bankofindustries.com",
       "image": "https://emmanuelbassey685.github.io/wdd231/chamber/images/member-logo.jpg",
       "membershipLevel": 3,
-      "description": "A leader in sustainable energy products and services."
+      "description": "Nigeria’s leading finance institution, providing support and business advisory services to promote industrial growth, entrepreneurship, and economic development."
     },
     {
-      "name": "Baker's Delight",
-      "address": "456 Flour St, Bakerville, BK 12345",
-      "phone": "555-234-5678",
-      "website": "https://bakersdelight.com",
+      "name": "African Development Bank (AfDB) Group",
+      "address": "Avenue Joseph Anoma, 01 BP 1387 Abidjan 01, Côte d'Ivoire.",
+      "email": "info@afdbgroup.com",
+      "phone": "+225 2720263900.",
+      "website": "https://afdbgroup.com",
       "image": "https://emmanuelbassey685.github.io/wdd231/chamber/images/member-logo.jpg",
       "membershipLevel": 1,
-      "description": "Family-owned bakery with fresh pastries daily."
+      "description": "The AfDB is a financial provider to African governments and private companies investing in the regional member countries (RMC)"
     },
     {
-      "name": "TechNest",
-      "address": "789 Silicon Blvd, Technocity, TC 34567",
-      "phone": "555-345-6789",
-      "website": "https://technest.io",
+      "name": "Nigerian Export-Import Bank (NEXIM)",
+      "address": "Plot 975 Cadastral Zone AO, Central Business District, Abuja, Nigeria.",
+      "email": "info@neximbank.com",
+      "phone": "+234-1-456-7890",
+      "website": "https://neximbank.com",
       "image": "https://emmanuelbassey685.github.io/wdd231/chamber/images/member-logo.jpg",
       "membershipLevel": 2,
-      "description": "A coworking space for startups and freelancers."
+      "description": " promote non-oil exports, offering financing and guarantees to diversify Nigeria's economy. It supports sectors like manufacturing, agro-processing, and services."
     },
     {
-      "name": "Mountain Outdoor Gear",
+      "name": "Jubaili Agrotech Group",
       "address": "321 Trailhead Rd, Alpine, AL 67890",
-      "phone": "555-456-7890",
-      "website": "https://mountaingear.com",
+      "email": "info@jubailiagrotech.com",
+      "phone": "+234-1-456-7890, +234 8036299160",
+      "website": "https://jubailiagrotech.com",
       "image": "https://emmanuelbassey685.github.io/wdd231/chamber/images/member-logo.jpg",
       "membershipLevel": 2,
-      "description": "Top-quality outdoor gear and camping equipment."
+      "description": "Specialized in agricultural technology and solutions for modern farming, providing equipment, irrigation systems, and sustainable farming practices to enhance productivity and food security."
     },
     {
-      "name": "Healthy Living Spa",
-      "address": "654 Wellness Ln, Zen City, ZC 90123",
-      "phone": "555-567-8901",
-      "website": "https://healthylivingspa.com",
+      "name": "Netay Agro Technology",
+      "address": " No. 25 Libreville Cres, Wuse 2, Abuja 904101, Federal Capital Territory, Nigeria.",
+      "email": "info@netayagrotech.com",
+      "phone": "+234 0706 370 9291",
+      "website": "https://netayagrotech.com",
       "image": "https://emmanuelbassey685.github.io/wdd231/chamber/images/member-logo.jpg",
       "membershipLevel": 3,
-      "description": "Relaxation and rejuvenation for body and mind."
+      "description": "Innovative agricultural technology solutions for modern farming, african leading provider."
     },
     {
-      "name": "EduBright Academy",
-      "address": "111 Scholar Ave, Learnville, LV 23456",
-      "phone": "555-678-9012",
-      "website": "https://edubright.com",
+      "name": "Brainy Hive Schools",
+      "address": "10, Prince O.U Utuk Street Off Esuene Street, FHE Uyo, AkwaIbom State, Nigeria.",
+      "email": "info@brainyhive.com",
+      "phone": "+234 703 192 0054",
+      "website": "https://brainyhive.com",
       "image": "https://emmanuelbassey685.github.io/wdd231/chamber/images/member-logo.jpg",
       "membershipLevel": 1,
-      "description": "After-school tutoring and academic support services."
+      "description": "Brainy Hive Schools delivers future-focused education from Creche to High School. We combine academic excellence, character development, and innovation to prepare students for global success."
     },
     {
-      "name": "Local Print Studio",
+      "name": "Ibom Icon Hotel & Golf Resort",
       "address": "222 Ink St, Printown, PT 78901",
-      "phone": "555-789-0123",
-      "website": "https://localprintstudio.com",
+      "email": "info@ibomicon.com",
+      "phone": "+234 808 052 7411",
+      "website": "https://ibomicon.com",
       "image": "https://emmanuelbassey685.github.io/wdd231/chamber/images/member-logo.jpg",
       "membershipLevel": 1,
-      "description": "Printing, branding, and custom merchandise."
+      "description": "Luxury hotel and golf resort in Uyo, Akwa Ibom State, Nigeria. Offering world-class accommodations, fine dining, and a championship golf course, it is a premier destination for leisure and business travelers seeking comfort and elegance."
     },
     {
-      "name": "Local Print Studio",
-      "address": "222 Ink St, Printown, PT 78901",
-      "phone": "555-789-0123",
-      "website": "https://localprintstudio.com",
+      "name": "Ibom Tropicana Mall & Entertainment Centre",
+      "address": "Udo Udoma Avenue Uyo, Akwa Ibom State, Nigeria.",
+      "email": "info@ibomtropicana.com",
+      "phone": "+234 803 123 4567",
+      "website": "https://ibomtropicana.com",
       "image": "https://emmanuelbassey685.github.io/wdd231/chamber/images/member-logo.jpg",
       "membershipLevel": 1,
-      "description": "Printing, branding, and custom merchandise."
+      "description": "A vibrant shopping mall and entertainment center in Uyo, Akwa Ibom State, Nigeria. Offering a wide range of retail stores, dining options, and recreational activities for the whole family."
     }
   ]
 }

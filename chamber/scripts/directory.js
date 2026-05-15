@@ -17,14 +17,18 @@ const displayMembers = (members) => {
         let website = document.createElement("p");
         let address = document.createElement("p");
         let description = document.createElement("p");
+        let email = document.createElement("p");
 
         website.classList.add("link")
         description.classList.add("description")
+        email.classList.add("email")
 
         fullName.innerHTML = `${member.name}`;
+        email.innerHTML = `${member.email}`;
         website.innerHTML = `${member.website}`;
         address.innerHTML = `${member.address}`;
         description.innerHTML = `${member.description}`;
+        
 
         portrait.setAttribute("src", member.image);
         portrait.setAttribute("alt", `Logo of ${member.name}.`);
@@ -36,6 +40,7 @@ const displayMembers = (members) => {
         card.appendChild(fullName);
         card.appendChild(address);
         card.appendChild(website);
+        card.appendChild(email);
         card.appendChild(description);
 
         cards.appendChild(card)
