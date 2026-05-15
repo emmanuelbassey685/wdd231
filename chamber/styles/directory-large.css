@@ -33,11 +33,11 @@ nav {
     margin: 10px 0 0 50px;
 }
 
-.logo h1 {
+.logo h1, h2 {
     font-family: var(--main-font);
 }
 
-.logo .h1-minor {
+.logo .h1-minor, .logo .h2-minor {
     font-size: 1rem;
     font-family: var(--secondary-font);
 }
@@ -88,7 +88,7 @@ nav a:hover {
     align-items: center;
 }
 
-.main-header h1 {
+.main-header h1, .main-header h2 {
     padding: 20px;
     font-family: var(--primary-font);
     color: var(--primary-color);
