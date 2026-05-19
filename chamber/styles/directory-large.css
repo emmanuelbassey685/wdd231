@@ -33,7 +33,7 @@ nav {
     margin: 10px 0 0 50px;
 }
 
-.logo h1, h2 {
+.logo h1, h2, p {
     font-family: var(--main-font);
 }
 
@@ -189,12 +189,12 @@ footer {
     padding: 20px;
 }
 
-.company-details h3 {
+.company-details h2 {
     font-family: var(--main-font);
     font-size: 1rem;
 }
 
-.company-details p {
+.company-details {
     font-family: var(--primary-font);
     padding-top: 5px;
 }
