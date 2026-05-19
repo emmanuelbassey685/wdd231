@@ -93,3 +93,15 @@
         gap: 20px;
     }
 }
+
+/* =========================
+   SMALLER MOBILE SCREENS
+========================= */
+@media (max-width: 600px) {
+
+    .list section {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
