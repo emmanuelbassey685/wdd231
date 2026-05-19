@@ -33,11 +33,11 @@ nav {
     margin: 10px 0 0 50px;
 }
 
-.logo h1, h2, p {
+.logo h1 {
     font-family: var(--main-font);
 }
 
-.logo .h1-minor, .logo .h2-minor {
+.logo .h1-minor {
     font-size: 1rem;
     font-family: var(--secondary-font);
 }
@@ -88,7 +88,7 @@ nav a:hover {
     align-items: center;
 }
 
-.main-header h1, .main-header h2 {
+.main-header h1 {
     padding: 20px;
     font-family: var(--primary-font);
     color: var(--primary-color);
@@ -134,7 +134,7 @@ nav a:hover {
     margin-bottom: 10px;
 }
 
-.grid h2 {
+.grid h1 {
     font-family: var(--main-font);
     color: var(--main-color);
 }
@@ -161,7 +161,7 @@ nav a:hover {
     display: none;
 }
 
-.list h2 {
+.list h1 {
     font-family: var(--main-font);
     font-size: 1.1rem;
     padding-right: 10px;
@@ -191,7 +191,8 @@ footer {
 
 .company-details h2 {
     font-family: var(--main-font);
-    font-size: 1rem;
+    font-size: 1.25rem;
+    padding-bottom: 5px;
 }
 
 .company-details {
