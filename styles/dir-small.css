@@ -11,11 +11,10 @@
     }
 
     nav {
-        display: flex;
-        flex-direction: row;
+        flex-direction: row; 
         align-items: center;
         justify-content: space-between;
-        flex-wrap: wrap;
+        flex-wrap: wrap; 
         padding: 10px 20px;
     }
 
@@ -29,19 +28,10 @@
         gap: 10px;
     }
 
-    .logo img {
-        width: 60px;
-        height: 60px;
-        aspect-ratio: 1 / 1;
-        margin-left: -50px;
-    }
-
-    .logo h1,
     .main-header h1 {
         font-size: 1.5rem;
     }
 
-    /* Hamburger Button */
     #hamButton {
         display: block;
         background: none;
@@ -59,7 +49,6 @@
         content: "✕";
     }
 
-    /* Navigation Links */
     #navLinks {
         display: none;
         flex-direction: column;
@@ -72,13 +61,23 @@
     }
 
     #navLinks li {
-        width: 100%;
         padding-top: 17px;
-        text-align: center;
         border-top: 1px solid #000;
+        width: 100%;
+        text-align: center;
     }
 
-    /* Footer */
+    .logo img {
+        aspect-ratio: 16/9;
+        width: 60px;
+        height: 60px;
+        margin-left: -50px;
+    }
+
+    .logo h1 {
+        font-size: 1.5rem;
+    }
+
     footer {
         display: flex;
         flex-direction: column;
@@ -89,7 +88,15 @@
     .social-icons {
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
         gap: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .list section {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
     }
 }
