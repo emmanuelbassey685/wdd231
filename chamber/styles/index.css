@@ -1,0 +1,192 @@
+/* =========================
+   RESET
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================
+   GLOBAL STYLES
+========================= */
+body {
+    font-family: var(--primary-font);
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--main-font);
+}
+
+#h1 {
+    margin-left: 20px;
+}
+
+/* =========================
+   WELCOME / HERO SECTION
+========================= */
+.wlc-container {
+    position: relative;
+    text-align: center;
+    color: #fff;
+}
+
+.wlc-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.wlc-container::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.wlc-msg,
+.cta-button {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: #fff;
+}
+
+.wlc-msg {
+    top: 40%;
+    width: 100%;
+    padding: 2rem;
+}
+
+.wlc-msg h1 {
+    font-size: 4rem;
+}
+
+.wlc-msg p {
+    font-size: 1.5rem;
+}
+
+.wlc-msg span {
+    font-size: 1.9rem;
+    font-weight: 500;
+    font-family: var(--secondary-font);
+}
+
+.cta-button {
+    top: 70%;
+    display: inline-block;
+    padding: 20px 100px;
+    margin-top: 50px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    text-align: center;
+    background-color: var(--main-color);
+    border: none;
+    border-radius: 5px;
+}
+
+/* =========================
+   INFORMATION SECTION
+========================= */
+.information-section,
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.information-section {
+    gap: 10px;
+}
+
+.information {
+    margin: 10px 20px;
+    background-color: var(--ash-color);
+}
+
+.information h2 {
+    padding: 10px;
+    color: #fff;
+    background-color: var(--primary-color);
+}
+
+/* =========================
+   EVENTS SECTION
+========================= */
+.events section {
+    padding: 10px 20px;
+}
+
+.events section h3 {
+    padding-bottom: 10px;
+}
+
+/* =========================
+   WEATHER SECTION
+========================= */
+.data {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.data img {
+    width: 70px;
+}
+
+.data div {
+    margin-top: 20px;
+}
+
+.data p,
+.forecast section p,
+.card-container section p {
+    padding: 5px;
+}
+
+.data #temp {
+    font-size: 1.2rem;
+}
+
+.data #desc {
+    text-transform: capitalize;
+}
+
+.forecast section {
+    padding: 20px;
+}
+
+.forecast section p {
+    padding: 10px;
+}
+
+/* =========================
+   MEMBER CARDS
+========================= */
+.card-container {
+    margin: 40px 20px;
+    gap: 20px;
+}
+
+.card-container section {
+    text-align: center;
+    background-color: var(--light-green);
+    border-radius: 5px;
+}
+
+.card-container section div {
+    padding-top: 20px;
+    margin-bottom: 10px;
+    border-bottom: 1px dotted;
+    font-family: var(--main-font);
+}
+
+.card-container section .member-level {
+    width: 50%;
+    margin: 10px auto 20px;
+    background-color: rgb(226, 194, 12);
+    border-radius: 10px;
+}

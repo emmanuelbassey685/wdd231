@@ -1,0 +1,26 @@
+/* =========================
+   HERO / WELCOME SECTION
+========================= */
+
+/* Base Styles */
+.wlc-msg h1 {
+    font-size: 2.5rem;
+}
+
+.wlc-msg p,
+.wlc-msg span {
+    font-size: 1.5rem;
+}
+
+.wlc-msg span {
+    margin-top: 10px;
+}
+
+.cta-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+    padding: 10px 50px;
+    font-size: 1.5rem;
+}
+
