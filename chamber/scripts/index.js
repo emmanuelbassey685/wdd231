@@ -1,7 +1,7 @@
 const weatherIcon = document.getElementById("icon");
 const temp = document.getElementById("temp");
-const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=7.39&lon=3.94&units=metric&appid=b3bb668d57aae1e11726f8783c5ee7f8`;
-const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=7.39&lon=3.94&units=metric&appid=b3bb668d57aae1e11726f8783c5ee7f8`;
+const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=7.39&lon=3.94&units=metric&appid=2ea91ad0f97a5b3f6e55ea52d51b5d94`;
+const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=7.39&lon=3.94&units=metric&appid=2ea91ad0f97a5b3f6e55ea52d51b5d94`;
 
 async function apiFetch() {
     try {
