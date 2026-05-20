@@ -1,0 +1,213 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #344e41;
+    --primary-color: #3a5a40;
+    --secondary-color: #588157;
+    --light-green: #a3b18a;
+    --ash-color: #dad7cd;
+    --main-font: "Josefin Sans";
+    --primary-font: "Lato";
+    --secondary-font: "Pacifico";
+}
+
+.wlc-container img{
+    height: auto;
+    display: block;
+    width: 100%;
+    z-index: 0;
+}
+
+.wlc-container {
+    position: relative;
+    text-align: center;
+    position: relative;
+    color: #fff;
+}
+
+.wlc-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust 0.5 for more or less darkness */
+    z-index: 1;
+}
+
+.wlc-msg {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    padding: 2rem;
+}
+
+.wlc-container a {
+    position: absolute;
+    top: 70%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+.wlc-msg h1 {
+    font-size: 4rem;
+    font-family: var(--main-font);
+}
+
+.wlc-msg p {
+    font-size: 1.5rem;
+    font-family: var(--primary-font);
+}
+
+.wlc-msg,
+.wlc-container a {
+    position: absolute;
+    z-index: 2; 
+    color: #fff;
+}
+
+.wlc-msg span {
+    font-weight: 500;
+    font-size: 1.9rem;
+    font-family: var(--secondary-font);
+}
+
+.wlc-container a button {
+    margin-top: 50px;
+    padding: 20px 100px;
+    font-size: 1.5rem;
+    font-family: var(--primary-font);
+    background-color: var(--main-color);
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 50px;
+    padding: 20px 100px;
+    font-size: 1.5rem;
+    font-family: var(--primary-font);
+    background-color: var(--main-color);
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    z-index: 2;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#h1{
+    margin-left: 20px;
+    font-family: var(--primary-font);
+}
+
+.information h2 {
+    background-color: var(--primary-color);
+    color: #fff;
+    font-family: var(--main-font);
+    padding: 10px;
+}
+
+.information-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
+}
+
+.information {
+    margin: 10px 20px;
+    background-color: var(--ash-color);
+}
+
+.events section {
+    padding: 10px 20px;
+    font-family: var(--primary-font);
+}
+
+.events section h3 {
+    padding-bottom: 10px;
+    font-family: var(--main-font);
+}
+
+.data {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.data img {
+    width: 70px;
+}
+
+.data div {
+    margin-top: 20px;
+}
+
+.data p {
+    padding: 5px;
+    font-family: var(--primary-font);
+}
+
+.data #temp {
+    font-size: 1.2rem;
+}
+
+.data #desc {
+    text-transform: capitalize;
+}
+
+.forecast section{
+    padding: 20px;
+}
+
+.forecast section p {
+    padding: 10px;
+    font-family: var(--primary-font);
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin: 40px 20px;
+    gap: 20px;
+}
+
+.card-container section {
+    background-color: var(--light-green);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.card-container section div {
+    text-align: center;
+    font-family: var(--main-font);
+    padding-top: 20px;
+    border-bottom: 1px dotted;
+    margin-bottom: 10px;
+}
+
+.card-container section p {
+    padding: 5px;
+    font-family: var(--primary-font);
+}
+
+.card-container section .member-level {
+    background-color: rgb(226, 194, 12);
+    width: 50%;
+    margin: 10px auto 20px;
+    border-radius: 10px;
+    
+}
