@@ -26,7 +26,6 @@ h3 {
 .wlc-container {
     position: relative;
     text-align: center;
-    position: relative;
     color: #fff;
 }
 
@@ -51,7 +50,6 @@ h3 {
 }
 
 .wlc-container a {
-    position: absolute;
     top: 70%;
     text-align: center;
 }
