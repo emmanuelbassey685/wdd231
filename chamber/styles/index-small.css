@@ -4,12 +4,6 @@
 
 /* Base Styles */
 
-.cta-button {
-    display: flex;
-    margin-top: 5rem;
-}
-
-
 /* Responsive Adjustments */
 @media (max-width: 600px) {
     .wlc-msg h1 {
