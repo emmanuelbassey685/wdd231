@@ -1,11 +1,3 @@
-/* =========================
-   RESET
-========================= */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 /* =========================
    GLOBAL STYLES
@@ -35,7 +27,8 @@ h3 {
 
 .wlc-container img {
     display: block;
-    width: 100%;
+    justify-content: center;
+    width: 30%;
     height: auto;
 }
 
@@ -43,7 +36,7 @@ h3 {
     content: "";
     position: absolute;
     inset: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
     z-index: 1;
 }
 
@@ -62,10 +55,6 @@ h3 {
     padding: 2rem;
 }
 
-.wlc-msg h1 {
-    font-size: 4rem;
-}
-
 .wlc-msg p {
     font-size: 1.5rem;
 }
@@ -78,10 +67,8 @@ h3 {
 
 .cta-button {
     top: 70%;
-    display: inline-block;
-    padding: 20px 100px;
-    margin-top: 50px;
-    font-size: 1.5rem;
+    padding: 20px 70px;
+    font-size: 2rem;
     text-decoration: none;
     text-align: center;
     background-color: var(--main-color);
@@ -155,14 +142,6 @@ h3 {
     text-transform: capitalize;
 }
 
-.forecast section {
-    padding: 20px;
-}
-
-.forecast section p {
-    padding: 10px;
-}
-
 /* =========================
    MEMBER CARDS
 ========================= */
@@ -187,7 +166,6 @@ h3 {
 .card-container section .member-level {
     width: 50%;
     margin: 10px auto 20px;
-    background-color: rgb(226, 194, 12);
     border-radius: 10px;
 }
 
