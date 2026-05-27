@@ -1,145 +1,218 @@
 /* ========================= GLOBAL STYLES ========================= */
-h1, h2, h3 { 
-    font-family: var(--main-font); 
+h1,
+h2,
+h3 {
+    font-family: var(--main-font);
 }
 
-h1 { /* Removed # because usually h1 is a tag, not an ID */
-    margin-left: 20px; 
+h1 {
+    margin-left: 20px;
 }
 
 /* ========================= WELCOME / HERO SECTION ========================= */
-.wlc-container { 
-    position: relative; 
-    text-align: center; 
-    color: #fff; 
-    overflow: hidden; /* Keeps image from spilling out */
+.wlc-container {
+    position: relative;
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
 }
 
-.wlc-container img { 
-    height: auto; 
-    display: block; 
-    width: 100%; /* Changed from 25% to fill the hero background */
-    z-index: 0; 
+.wlc-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
 }
 
-.wlc-container::before { 
-    content: ""; 
-    position: absolute; 
-    top: 0; 
-    left: 0; 
-    height: 100%; 
-    width: 100%; 
-    background-color: rgba(0, 0, 0, 0.6); 
-    z-index: 1; 
+/* Dark overlay */
+.wlc-container::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
 }
 
-.wlc-msg { 
-    position: absolute; 
-    top: 40%; 
-    left: 50%; 
-    transform: translate(-50%, -50%); 
-    width: 80%; /* Increased for better mobile readability */
-    z-index: 2; 
+/* Hero text */
+.wlc-msg {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    z-index: 2;
     color: #fff;
 }
 
-.wlc-msg p { 
-    font-size: 1.6rem; 
-    font-family: var(--primary-font); 
+.wlc-msg p {
+    font-size: 1.6rem;
+    font-family: var(--primary-font);
+    line-height: 1.5;
 }
 
-.wlc-msg span { 
-    font-weight: 400; 
-    font-size: 1.9rem; 
-    font-family: var(--secondary-font); 
+.wlc-msg span {
+    font-weight: 400;
+    font-size: 1.9rem;
+    font-family: var(--secondary-font);
 }
 
-/* Button styling combined for consistency */
-.cta-button { 
-    display: inline-block; 
-    position: absolute; 
-    top: 70%; 
-    left: 50%; 
-    transform: translate(-50%, -50%); 
-    padding: 15px 40px; /* More standard button padding */
-    font-size: 1.6rem; 
-    font-family: var(--main-font); 
-    background-color: var(--main-color); 
-    color: #fff; 
-    border-radius: 5px; 
-    text-decoration: none; 
-    z-index: 2;
+/* CTA Button */
+.cta-button {
+    display: inline-block;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    font-family: var(--main-font);
+    background-color: var(--main-color);
+    color: #fff;
     border: none;
+    border-radius: 5px;
+    text-decoration: none;
     cursor: pointer;
+    z-index: 2;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: var(--primary-color);
 }
 
 /* ========================= INFORMATION SECTION ========================= */
-.information-section { 
-    display: grid; 
+.information-section {
+    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 10px; 
+    gap: 20px;
+    padding: 20px;
 }
 
-.information { 
-    margin: 10px 20px; 
-    background-color: var(--ash-color); 
+.information {
+    background-color: var(--ash-color);
+    border-radius: 5px;
+    overflow: hidden;
 }
 
-.information h2 { 
-    padding: 10px; 
-    color: #fff; 
-    background-color: var(--primary-color); 
+.information h2 {
+    padding: 10px;
+    color: #fff;
+    background-color: var(--primary-color);
+    margin: 0;
 }
 
 /* ========================= WEATHER SECTION ========================= */
-.data { 
-    display: flex; 
-    align-items: center; 
-    justify-content: space-evenly; 
+.data {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
 }
 
-.data img { width: 30px; }
-.data div { margin-top: 20px; }
-
-.data #temp { font-size: 1.2rem; }
-.data #desc { text-transform: capitalize; }
-
-.card-container { 
-    display: grid; 
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
-    margin: 40px 20px; 
-    gap: 20px; 
+.data img {
+    width: 30px;
+    height: auto;
 }
 
-.card-container section { 
-    background-color: var(--light-green); 
-    border-radius: 5px; 
-    text-align: center; 
+.data div {
+    margin-top: 10px;
 }
 
-.card-container section .member-level { 
-    background-color: rgb(226, 194, 12); 
-    width: 60%; 
-    margin: 10px auto 20px; 
-    border-radius: 10px; 
+.data #temp {
+    font-size: 1.2rem;
 }
 
-/* Responsive Weather Icon */
-.weather-icon-container { 
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
+.data #desc {
+    text-transform: capitalize;
 }
 
-#icon { 
-    display: block; 
-    width: 60px; 
-    height: auto; 
+/* ========================= CARD SECTION ========================= */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin: 40px 20px;
+    gap: 20px;
 }
 
-/* Responsive Adjustments */
-@media (max-width: 600px) { /* Changed from 100px to 600px */
-    .wlc-msg p { font-size: 1.2rem; }
-    .cta-button { padding: 10px 20px; font-size: 1.2rem; }
-    #icon { max-width: 40px; }
+.card-container section {
+    background-color: var(--light-green);
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px;
+}
+
+.card-container section .member-level {
+    background-color: rgb(226, 194, 12);
+    width: 60%;
+    margin: 10px auto 20px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+/* ========================= WEATHER ICON ========================= */
+.weather-icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#icon {
+    display: block;
+    width: 60px;
+    height: auto;
+}
+
+/* ========================= RESPONSIVE DESIGN ========================= */
+@media (max-width: 768px) {
+
+    .wlc-msg {
+        width: 90%;
+        top: 45%;
+    }
+
+    .wlc-msg p {
+        font-size: 1.2rem;
+    }
+
+    .wlc-msg span {
+        font-size: 1.4rem;
+    }
+
+    .cta-button {
+        top: 75%;
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+
+    #icon {
+        width: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .wlc-msg {
+        top: 42%;
+    }
+
+    .wlc-msg p {
+        font-size: 1rem;
+    }
+
+    .wlc-msg span {
+        font-size: 1.2rem;
+    }
+
+    .cta-button {
+        width: 80%;
+        text-align: center;
+        font-size: 0.95rem;
+    }
+
+    .card-container,
+    .information-section {
+        grid-template-columns: 1fr;
+    }
 }

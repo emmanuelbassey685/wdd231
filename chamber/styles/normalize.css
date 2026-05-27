@@ -8,7 +8,7 @@
 
  html {
     line-height: 1.15; /* 1 */
-    -webkit-text-size-adjust: 100%; /* 2 - Removed quotes around the property name */
+    -webkit-text-size-adjust: 100%; /* 2 - Removed quotes and colon from inside the property name */
   }
   
   /* Sections
@@ -35,7 +35,7 @@
    * `article` contexts in Chrome, Firefox, and Safari.
    */
   
-  h1 { /* Removed h2, as the comment specifically addresses h1 sizing issues */
+  h1 { 
     font-size: 2em;
     margin: 0.67em 0;
   }
@@ -85,12 +85,24 @@
     text-decoration: underline; /* 2 */
     text-decoration: underline dotted; /* 2 */
   }
-  
+
   /**
    * Add the correct font weight in Chrome, Edge, and Safari.
    */
-  
+
   b,
   strong {
     font-weight: bolder;
+  }
+
+  /**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+
+  code,
+  kbd,
+  samp {
+    font-family: monospace, monospace; /* 1 */
+    font-size: 1em; /* 2 */
   }

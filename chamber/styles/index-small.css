@@ -1,72 +1,51 @@
-/* =========================
-   910px
-========================= */
+/* ========================= 910px ========================= */
 @media (max-width: 910px) {
-
   .cta-button {
     display: flex;
     justify-content: center;
     padding: 10px 50px;
     margin-top: 5rem;
   }
-
 }
 
-/* =========================
-   750px
-========================= */
+/* ========================= 750px ========================= */
 @media (max-width: 750px) {
-
   .wlc-msg h1 {
     font-size: 2.2rem;
   }
-
   .wlc-msg p {
     font-size: 1.2rem;
   }
-
   .cta-button {
     margin-top: 4rem;
     font-size: 1.2rem;
   }
-
 }
 
-/* =========================
-   510px
-========================= */
+/* ========================= 510px ========================= */
 @media (max-width: 510px) {
-
   .wlc-msg span {
     display: block;
     font-size: 1.2rem;
     margin-top: 10px;
   }
-
   .cta-button {
     margin-bottom: 4rem;
     font-size: 1rem;
     padding: 10px 20px;
   }
-
 }
 
-/* =========================
-   445px
-========================= */
+/* ========================= 445px ========================= */
 @media (max-width: 445px) {
-
   .wlc-msg h1 {
     font-size: 1.3rem;
   }
-
   .wlc-msg p {
     font-size: 1rem;
   }
-
   .cta-button {
     font-size: 0.9rem;
     padding: 5px 10px;
   }
-
 }
