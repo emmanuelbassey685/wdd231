@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Site Plan - Weather Forecast API Website</title>
+    <style>
+        :root {
+            --primary-blue: #1A365D;
+            --accent-cyan: #00B4D8;
+            --bg-light: #F8FAFC;
+            --text-dark: #334155;
+            --white: #FFFFFF;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: var(--primary-blue);
+            color: var(--white);
+            padding: 2rem 1rem;
+            text-align: center;
+            border-bottom: 5px solid var(--accent-cyan);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin: 0.5rem 0 0 0;
+            font-size: 1.1rem;
+            color: var(--accent-cyan);
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        section {
+            background-color: var(--white);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        h2 {
+            color: var(--primary-blue);
+            border-bottom: 2px solid var(--bg-light);
+            padding-bottom: 0.5rem;
+            margin-top: 0;
+        }
+
+        h3 {
+            color: var(--accent-cyan);
+        }
+
+        ul {
+            padding-left: 1.5rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        .color-palette {
+            display: flex;
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .color-box {
+            flex: 1;
+            padding: 1rem;
+            border-radius: 6px;
+            text-align: center;
+            font-weight: bold;
+            color: var(--white);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .box-primary { background-color: var(--primary-blue); }
+        .box-accent { background-color: var(--accent-cyan); color: var(--text-dark); }
+        .box-bg { background-color: var(--bg-light); color: var(--text-dark); border: 1px solid #CBD5E1; }
+
+        .wireframe-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            margin-top: 1.5rem;
+        }
+
+        @media (min-width: 768px) {
+            .wireframe-container {
+                grid-template-columns: 1fr 2fr;
+            }
+        }
+
+        .wireframe-box {
+            border: 2px dashed var(--primary-blue);
+            padding: 1rem;
+            background-color: var(--bg-light);
+            border-radius: 6px;
+        }
+
+        .wireframe-element {
+            border: 1px solid var(--text-dark);
+            padding: 0.5rem;
+            margin: 0.5rem 0;
+            text-align: center;
+            background-color: var(--white);
+            font-size: 0.9rem;
+        }
+
+        .wf-grid-3 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0.5rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            font-size: 0.9rem;
+            color: var(--text-dark);
+            border-top: 1px solid #E2E8F0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>SkyPulse Weather API Meteorological Site Plan</h1>
+        <p>Blueprint for a Dynamic Weather Forecasting Web Application</p>
+    </header>
+
+    <main>
+        <!-- Site Name Section -->
+        <section id="site-name">
+            <h2>Site Name</h2>
+            <p><strong>Name:</strong> SkyPulse Forecasts</p>
+            <p><strong>Reasoning:</strong> The name "SkyPulse" blends the visual element of the atmosphere (Sky) with real-time, live-updating technical data (Pulse). It sounds professional, reliable, and instantly establishes the website as a source for dynamic meteorological tracking.</p>
+            <p><strong>Proposed Domain Availability:</strong> skypulseweather.net</p>
+        </section>
+
+        <!-- Site Purpose Section -->
+        <section id="site-purpose">
+            <h2>Site Purpose</h2>
+            <p>The purpose of SkyCast Explorer is to provide a clean, responsive interface that consumes a third-party weather API to deliver real-time meteorological insights, multi-day forecasts, and climate trends. It aims to serve both casual travelers looking for a quick daily update and developers/enthusiasts testing data rendering from endpoints. The platform will simplify raw JSON data structures into visually engaging charts, condition summaries, and dynamic regional pages.</p>
+        </section>
+
+        <!-- Scenarios Section -->
+        <section id="scenarios">
+            <h2>Scenarios (Target Audience Queries)</h2>
+            <ul>
+                <li><strong>Scenario 1:</strong> "I am planning an outdoor weekend hiking trip to the mountains. How can I quickly see a reliable hour-by-hour precipitation breakdown for a specific zip code over the next 48 hours?"</li>
+                <li><strong>Scenario 2:</strong> "As a regular commuter, can I save my home city page on this application to quickly inspect wind speeds, visibility, and UV index parameters before heading out every morning?"</li>
+            </ul>
+        </section>
+
+        <!-- Color Scheme Section -->
+        <section id="color-scheme">
+            <h2>Color Scheme</h2>
+            <p>The color palette is inspired by clear and atmospheric weather conditions, carefully selected to establish professional contrast and readability.</p>
+            
+            <div class="color-palette">
+                <div class="color-box box-primary">Primary Blue<br>#1A365D</div>
+                <div class="color-box box-accent">Accent Cyan<br>#00B4D8</div>
+                <div class="color-box box-bg">Light Background<br>#F8FAFC</div>
+            </div>
+
+            <ul>
+                <li><strong>Primary Blue (#1A365D):</strong> Applied strictly to deep foundational layouts, including headers, prominent landing page banners, and main section headings.</li>
+                <li><strong>Accent Cyan (#00B4D8):</strong> Used to emphasize real-time data metrics, hyperlinks, current weather highlights, buttons, and decorative borders.</li>
+                <li><strong>Light Background (#F8FAFC):</strong> Generates a clean, low-strain reading workspace utilized across the global body element and secondary card structures.</li>
+            </ul>
+        </section>
+
+        <!-- Typography Section -->
+        <section id="typography">
+            <h2>Typography</h2>
+            <p>For consistent cross-platform presentation, clean geometric sans-serif typefaces are prioritized to optimize readability of fast-changing numeric data metrics.</p>
+            <ul>
+                <li><strong>Headings (H1, H2, H3):</strong> <code>'Segoe UI', Helvetica, sans-serif</code> — Bold, authoritative, and clean execution for structural landmarks.</li>
+                <li><strong>Body text and Data Readouts:</strong> <code>Verdana, Geneva, sans-serif</code> — Chosen explicitly for its wider letter spacing which makes small tabular weather values and parameters easily readable.</li>
+            </ul>
+        </section>
+
+        <!-- Wireframe Section -->
+        <section id="wireframe">
+            <h2>Wireframe Layout Plan</h2>
+            <p>The layout strategy targets a flexible, mobile-first grid structure ensuring seamless parsing of structural layouts regardless of screen sizing dimensions.</p>
+            
+            <div class="wireframe-container">
+                <!-- Mobile Blueprint -->
+                <div class="wireframe-box">
+                    <h3>Mobile View Layout</h3>
+                    <div class="wireframe-element">[Brand Logo / Site Header]</div>
+                    <div class="wireframe-element">[Search Box Input]</div>
+                    <div class="wireframe-element">
+                        <strong>[Current Location Card]</strong><br>
+                        Temp, Condition, Big Icon
+                    </div>
+                    <div class="wireframe-element">[Metric Card 1: Wind]</div>
+                    <div class="wireframe-element">[Metric Card 2: Humidity]</div>
+                    <div class="wireframe-element">[Metric Card 3: UV Index]</div>
+                    <div class="wireframe-element">[Footer Information]</div>
+                </div>
+
+                <!-- Desktop Blueprint -->
+                <div class="wireframe-box">
+                    <h3>Desktop/Tablet View Layout</h3>
+                    <div class="wireframe-element" style="display: flex; justify-content: space-between; align-items: center;">
+                        <span>[Brand Logo & Navigation]</span>
+                        <span>[Search Box Input]</span>
+                    </div>
+                    
+                    <div style="display: flex; gap: 1rem; margin: 0.5rem 0;">
+                        <div class="wireframe-element" style="flex: 1; padding: 2rem 0;">
+                            <strong>[Current Location Hero Banner]</strong><br>
+                            Dynamic Temperature, Forecast Icon, and City Name Metrics
+                        </div>
+                        
+                        <div style="flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
+                            <div class="wireframe-element">[Quick Metrics: Wind & Pressure]</div>
+                            <div class="wireframe-element">[Quick Metrics: Humidity & UV]</div>
+                        </div>
+                    </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
