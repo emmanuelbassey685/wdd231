@@ -4,6 +4,7 @@
   --secondary-color: #588157;
   --light-green: #a3b18a;
   --ash-color: #dad7cd;
+  
   --main-font: 'Josefin Sans', sans-serif;
   --primary-font: 'Lato', sans-serif;
   --secondary-font: 'Pacifico', cursive;
@@ -23,7 +24,7 @@ main > p {
   text-align: center;
   margin-bottom: 1rem;
   font-size: 1.5rem;
-  color: #344e41;
+  color: var(--main-color); /* Updated to use CSS variable */
   font-family: var(--primary-font);
 }
 
@@ -31,7 +32,7 @@ main > p {
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
-  gap: 2rem; /* Replaces margin-bottom for sections */
+  gap: 2rem;
 }
 
 .place-container section {
@@ -41,7 +42,6 @@ main > p {
   border-radius: 10px;
   display: grid;
   gap: 1rem;
-  /* Wrapped area names in quotes for correct syntax */
   grid-template-areas: 
     "name" 
     "image" 
@@ -53,6 +53,7 @@ main > p {
   text-align: center;
   padding-bottom: 10px;
   font-family: var(--main-font);
+  color: var(--main-color); /* Added to ensure headings match the color scheme */
   grid-area: name;
 }
 
@@ -68,22 +69,22 @@ main > p {
   text-align: center;
   padding-bottom: 10px;
   grid-area: address;
-  font-style: normal; /* Removes default italic styling */
+  font-style: normal;
 }
 
 .place-container section p {
   text-align: center;
   font-family: var(--primary-font);
+  color: var(--main-color); /* Added to ensure standard text matches the color scheme */
   grid-area: description;
 }
 
-/* Enhances the layout for larger screens (tablets and desktops) */
 @media (min-width: 768px) {
   .place-container section {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 
-      "name name"
-      "image address"
+      "name name" 
+      "image address" 
       "image description";
     align-items: center;
   }
