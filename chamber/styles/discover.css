@@ -4,7 +4,7 @@
   --secondary-color: #588157;
   --light-green: #a3b18a;
   --ash-color: #dad7cd;
-  
+
   --main-font: 'Josefin Sans', sans-serif;
   --primary-font: 'Lato', sans-serif;
   --secondary-font: 'Pacifico', cursive;
@@ -24,7 +24,7 @@ main > p {
   text-align: center;
   margin-bottom: 1rem;
   font-size: 1.5rem;
-  color: var(--main-color); /* Updated to use CSS variable */
+  color: var(--main-color);
   font-family: var(--primary-font);
 }
 
@@ -42,10 +42,10 @@ main > p {
   border-radius: 10px;
   display: grid;
   gap: 1rem;
-  grid-template-areas: 
-    "name" 
-    "image" 
-    "address" 
+  grid-template-areas:
+    "name"
+    "image"
+    "address"
     "description";
 }
 
@@ -53,7 +53,7 @@ main > p {
   text-align: center;
   padding-bottom: 10px;
   font-family: var(--main-font);
-  color: var(--main-color); /* Added to ensure headings match the color scheme */
+  color: var(--main-color);
   grid-area: name;
 }
 
@@ -75,16 +75,16 @@ main > p {
 .place-container section p {
   text-align: center;
   font-family: var(--primary-font);
-  color: var(--main-color); /* Added to ensure standard text matches the color scheme */
+  color: var(--main-color);
   grid-area: description;
 }
 
 @media (min-width: 768px) {
   .place-container section {
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
-      "name name" 
-      "image address" 
+    grid-template-areas:
+      "name name"
+      "image address"
       "image description";
     align-items: center;
   }
