@@ -4,11 +4,11 @@
     --secondary-color: #588157;
     --light-green: #a3b18a;
     --ash-color: #dad7cd;
-
-    --main-font: "Josefin Sans", sans-serif;
-    --primary-font: "Lato", sans-serif;
-    --secondary-font: "Pacifico", cursive;
+    --main-font: "Josefin Sans";
+    --primary-font: "Lato";
+    --secondary-font: "Pacifico";
 }
+
 /* .place-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -77,27 +77,4 @@ main > p {
     text-align: center;
     font-family: var(--primary-font);
     grid-area: description;
-}
-
-/* --- Tablet/Desktop View --- */
-@media (min-width: 768px) {
-    #menu {
-        display: none; /* Hide hamburger on desktop */
-    }
-    #navLinks {
-        display: flex; /* Show horizontal links */
-        gap: 20px;
-    }
-}
-
-/* =========================
-   SMALLER MOBILE SCREENS
-========================= */
-@media (max-width: 600px) {
-
-    .list section {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
 }
