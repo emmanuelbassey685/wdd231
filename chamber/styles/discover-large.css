@@ -26,11 +26,6 @@
         height: auto;
     }
 
-    .place-container section h2 {
-        grid-area: name;
-        margin: 0;
-    }
-
     .place-container section address {
         grid-area: address;
         margin: 0;
