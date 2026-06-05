@@ -4,11 +4,11 @@
     --secondary-color: #588157;
     --light-green: #a3b18a;
     --ash-color: #dad7cd;
-    --main-font: "Josefin Sans";
-    --primary-font: "Lato";
-    --secondary-font: "Pacifico";
-}
 
+    --main-font: "Josefin Sans", sans-serif;
+    --primary-font: "Lato", sans-serif;
+    --secondary-font: "Pacifico", cursive;
+}
 /* .place-container {
     display: grid;
     grid-template-columns: 1fr;
