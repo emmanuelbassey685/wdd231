@@ -1,39 +1,30 @@
-/* Common image styles */
-.place-container section img {
-    transition: 0.75s;
-}
-
-.place-container section img:hover {
-    transform: scale(1.05);
-    cursor: pointer;
-}
-
 @media (min-width: 641px) {
     .place-container section {
         display: grid;
-        grid-template-areas:
-            "image name"
-            "image address"
-            "image description";
-        grid-template-columns: 150px 1fr;
-        gap: 0.5rem 1rem;
-        align-items: start;
-    }
-
-    .place-container section img {
-        grid-area: image;
-        width: 100%;
-        height: auto;
+        grid-template-areas: 
+        "image name"
+        "image address"
+        "image description"
+        ;
     }
 
     .place-container section address {
-        grid-area: address;
-        margin: 0;
-    }
+        margin-top: -6rem;
+        margin-left: 1rem;
+    } 
 
     .place-container section p {
-        grid-area: description;
-        margin: 0;
+        margin-top: -4rem;
+        margin-left: 1rem;
+    }
+
+    .place-container section img {
+        transition: .75s;
+    }
+
+    .place-container section img:hover {
+        transform: scale(1.05);
+        cursor: pointer;
     }
 }
 
@@ -43,4 +34,14 @@
         grid-template-columns: 1fr 1fr;
         gap: 20px;
     }
+
+    .place-container section img {
+        transition: .75s;
+    }
+
+    .place-container section img:hover {
+        transform: scale(1.05);
+        cursor: pointer;
+    }
+
 }
