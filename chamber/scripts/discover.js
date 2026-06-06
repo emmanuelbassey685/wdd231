@@ -54,7 +54,7 @@ if (!lastVisit) {
     const daysBetween = Math.floor(timeDifference / msInOneDay);
 
     if (daysBetween < 1) {
-        message = "Welcome back! Awesome. We're delighted to see you again.";
+        message = "Back so soon! Awesome!";
     } else if (daysBetween === 1) {
         message = "You last visited 1 day ago.";
     } else {
