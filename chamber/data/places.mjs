@@ -9,7 +9,7 @@ export const places = [
     "name": "Obudu Mountain Resort / Cattle Ranch",
     "address": "Obudu Plateau, Cross River State, Nigeria",
     "description": "Obudu Mountain resort in Cross River State, offers breathtaking views and a tranquil environment for relaxation and outdoor activities.",
-    "image": "images/obudu.webp"
+    "image": "images/waterpark.webp"
   },
   {
     "name": "Agbokim Waterfalls",
