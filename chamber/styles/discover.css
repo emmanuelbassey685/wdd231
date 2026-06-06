@@ -19,51 +19,55 @@ main > p {
     text-align: center;
     margin-bottom: 1rem;
     font-size: 1.5rem;
-    color: #344e41;
+    color: var(--main-color);
     font-family: var(--primary-font);
+}
+
+.place-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
 }
 
 .place-container section {
-    margin: 0 auto;
-    text-align: center;
-    box-shadow: 1px 3px 8px #545353;
-    margin-bottom: 2rem;
+    margin: 0 auto 2rem;
     padding: 20px;
+    text-align: center;
     background-color: var(--ash-color);
     border-radius: 10px;
+    box-shadow: 1px 3px 8px rgba(84, 83, 83, 0.3);
+
     display: grid;
-    grid-template-areas: 
-    "name"
-    "image"
-    "address"
-    "description"
-    ;
+    grid-template-areas:
+        "name"
+        "image"
+        "address"
+        "description";
 }
 
 .place-container section img {
+    grid-area: image;
     width: 100%;
     max-width: 300px;
-    border-radius: 10px;
     height: auto;
     object-fit: cover;
-    grid-area: image;
+    border-radius: 10px;
+    justify-self: center;
 }
 
-.place-container section h2 {   
-    text-align: center;
-    padding-bottom: 10PX;
-    font-family: var(--main-font);
+.place-container section h2 {
     grid-area: name;
+    padding-bottom: 10px;
+    font-family: var(--main-font);
 }
 
 .place-container section address {
-    text-align: center;
-    padding-bottom: 10px;
     grid-area: address;
+    padding-bottom: 10px;
+    font-style: normal;
 }
 
 .place-container section p {
-    text-align: center;
-    font-family: var(--primary-font);
     grid-area: description;
+    font-family: var(--primary-font);
 }

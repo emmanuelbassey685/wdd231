@@ -1,27 +1,28 @@
 @media (min-width: 640px) {
     .place-container section {
-        display: grid;
+        grid-template-areas:
+            "image name"
+            "image address"
+            "image description";
+        grid-template-columns: 300px 1fr;
         gap: 1.5rem;
         padding: 1rem;
-        grid-template-areas: 
-        "image name"
-        "image address"
-        "image description"
-        ;
+        align-items: start;
     }
 
-    .place-container section address {
-        margin-top: -6rem;
-        margin-left: 1rem;
-    } 
+    .place-container section h2 {
+        align-self: end;
+        margin: 0;
+    }
 
+    .place-container section address,
     .place-container section p {
-        margin-top: -4rem;
-        margin-left: 1rem;
+        margin: 0;
+        text-align: left;
     }
 
     .place-container section img {
-        transition: .75s;
+        transition: transform 0.75s ease;
     }
 
     .place-container section img:hover {
@@ -37,4 +38,3 @@
         gap: 2rem;
     }
 }
-
