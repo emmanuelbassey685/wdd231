@@ -1,6 +1,8 @@
-@media (min-width: 641px) {
+@media (min-width: 640px) {
     .place-container section {
         display: grid;
+        gap: 1.5rem;
+        padding: 1rem;
         grid-template-areas: 
         "image name"
         "image address"
@@ -31,8 +33,8 @@
 @media (min-width: 1024px) {
     .place-container {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
     }
 }
 
