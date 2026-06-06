@@ -30,7 +30,6 @@ main > p {
     padding: 20px;
     background-color: var(--ash-color);
     border-radius: 10px;
-
     display: grid;
     grid-template-areas: 
     "name"
@@ -53,14 +52,11 @@ main > p {
     grid-area: name;
 }
 
-
 .place-container section address {
     text-align: center;
     padding-bottom: 10px;
     grid-area: address;
-    
 }
-
 
 .place-container section p {
     text-align: center;
