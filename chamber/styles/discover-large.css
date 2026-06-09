@@ -1,5 +1,6 @@
 @media (min-width: 640px) {
     .place-container section {
+        display : grid;
         grid-template-areas:
             "image name"
             "image address"
