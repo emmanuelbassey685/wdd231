@@ -4,7 +4,6 @@
     --accent-color: #ef4444;
     --bg-color: #f8fafc;
     --card-bg: #ffffff;
-    --pink-color: #f472b6;
     --text-color: #1e293b;
     --light-text: #64748b;
 }
@@ -21,7 +20,7 @@ body {
     min-height: 100vh;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     color: var(--text-color);
-    background-color: var(--bg-color);
+    background-color: var(--light-text);
     line-height: 1.6;
 }
 
@@ -94,6 +93,7 @@ header {
     max-width: 1200px;
     margin-inline: auto;
     padding: 2rem 1rem;
+    background-color: var(--text-color);
 }
 
 .hero {
@@ -194,7 +194,7 @@ input {
     padding: 1rem;
     border-left: 6px solid;
     border-radius: 4px;
-    background-color: #fff;
+    background-color: var(--card-bg);
 }
 
 .high-risk {
@@ -221,7 +221,7 @@ input {
     max-width: 500px;
     padding: 2rem;
     border-radius: 8px;
-    background-color: #fff;
+    background-color: var(--card-bg);
 }
 
 .close-modal {
