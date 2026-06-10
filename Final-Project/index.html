@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Real-time weather forecasts, real-time weather updates and meteorological information for your city.">
+    <meta name="author" content="Emmanuel Bassey">
+    <meta property="og:title" content="SkyPulse Forecasts">
+    <meta property="og:description" content="Live weather updates and forecasts.">
+    <link rel="icon" href="images/favicon.ico">
+    <meta property="og:title" content="SkyPulse Weather API Meteorology">    
+    <meta property="og:type" content="website"> 
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Pacifico&display=swap" rel="stylesheet">
+    <script src="../scripts/date.js" defer></script>    
+    <script src="scripts/main.js" type="module"></script>
+    <script src="scripts/modal.js" defer></script>
+    <script src="scripts/forecast.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/storage.js" defer></script>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css" media="(min-width: 768px)">
+    <title>SkyPulse Weather Forecast | Home</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-area">
+                <img src="images/favicon-32x32.png" alt="SkyPulse Logo" class="logo" width="50" height="50">
+                <h1>SkyPulse</h1>
+            </div>
+            <button id="menu-toggle" aria-label="Toggle Navigation">☰</button>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="forecast.html">Forecast</a></li>
+                    <li><a href="alerts.html">Alerts</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <img src="images/weather-icon.webp" alt="Beautiful sky landscape" class="hero-img">
+            <div class="hero-text">
+                <h2>Your Reliable Weather Companion</h2>
+                <p>Stay ahead of the storm with real-time accuracy.</p>
+            </div>
+        </section>
+
+        <section class="weather-now container">
+            <h2>Current Weather</h2>
+            <div class="search-box">
+                <select id="city-selector">
+                    <option value="">Select a city...</option>
+                </select>
+            </div>
+            <div id="weather-card" class="card hidden">
+                <h3 id="weather-city">City Name</h3>
+                <div class="weather-info">
+                    <span id="weather-temp" class="temp">--°C</span>
+                    <p id="weather-desc">Loading...</p>
+                    <p>Humidity: <span id="weather-humidity">--</span>%</p>
+                    <p>Wind Speed: <span id="weather-wind">--</span> km/h</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="subscribe container">
+            <h2>Subscribe to Weather Alerts</h2>
+            <form action="subscribe-result.html" method="GET" class="sub-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required placeholder="John Doe">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="john@example.com">
+
+                <button type="submit" class="btn">Subscribe Now</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Bassey, Emmanuel.</p>
+        <p>Last Modified: <span id="last-modified"></span></p>
+    </footer>
+
+</body>
+</html>

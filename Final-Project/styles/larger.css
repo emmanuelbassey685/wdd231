@@ -1,0 +1,49 @@
+@media (min-width:768px){
+
+#menuBtn{
+    display:none;
+}
+
+nav{
+    display:flex;
+    gap:1rem;
+}
+
+#forecastContainer{
+    grid-template-columns:
+    repeat(auto-fit,minmax(200px,1fr));
+}
+}
+
+#menu-toggle {
+    display: none;
+}
+
+#main-nav {
+    display: block;
+    position: static;
+    width: auto;
+    background: none;
+}
+
+#main-nav ul {
+    flex-direction: row;
+    gap: 1rem;
+}
+
+#main-nav a {
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+}
+
+.forecast-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.sub-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
