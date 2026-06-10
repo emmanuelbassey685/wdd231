@@ -1,20 +1,3 @@
-@media (min-width:768px){
-
-#menuBtn{
-    display:none;
-}
-
-nav{
-    display:flex;
-    gap:1rem;
-}
-
-#forecastContainer{
-    grid-template-columns:
-    repeat(auto-fit,minmax(200px,1fr));
-}
-}
-
 #menu-toggle {
     display: none;
 }
