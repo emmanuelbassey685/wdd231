@@ -94,6 +94,7 @@ header {
     margin-inline: auto;
     padding: 2rem 1rem;
     background-color: var(--text-color);
+    color: var(--bg-color);
 }
 
 .hero {
@@ -116,7 +117,7 @@ header {
     top: 50%;
     left: 50%;
     width: 90%;
-    color: #fff;
+    color: (var(--bg-color));
     text-align: center;
     transform: translate(-50%, -50%);
 }
@@ -194,7 +195,8 @@ input {
     padding: 1rem;
     border-left: 6px solid;
     border-radius: 4px;
-    background-color: var(--card-bg);
+    background-color: var(--light-text);
+    color: var(--bg-color);
 }
 
 .high-risk {
@@ -202,7 +204,7 @@ input {
 }
 
 .moderate-risk {
-    border-left-color: #f59e0b;
+    border-left-color: var(--accent-color);
 }
 
 .modal {
