@@ -245,37 +245,3 @@ footer {
     background-color: #0f172a;
 }
 
-@media (min-width: 768px) {
-    #menu-toggle {
-        display: none;
-    }
-
-    #main-nav {
-        position: static;
-        display: block;
-        width: auto;
-        background-color: transparent;
-    }
-
-    #main-nav ul {
-        flex-direction: row;
-        gap: 1rem;
-    }
-
-    #main-nav a {
-        padding: 0.5rem 1rem;
-        border-radius: 4px;
-    }
-
-    .forecast-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 1.5rem;
-        margin-top: 1.5rem;
-    }
-
-    .sub-form {
-        max-width: 600px;
-        margin-inline: auto;
-    }
-}
