@@ -1,9 +1,9 @@
-export function updateTimestamp() {
-    const modifiedField = document.getElementById('last-modified');
-    if (modifiedField) {
-        modifiedField.textContent = document.lastModified;
+export function getSavedCity() {
+    return localStorage.getItem('selectedCity') || '';
+}
+
+export function saveCity(cityName) {
+    if (cityName) {
+        localStorage.setItem('selectedCity', cityName);
     }
-    
-    // Store track record of access
-    localStorage.setItem('skypulse-last-visit', new Date().toISOString());
 }

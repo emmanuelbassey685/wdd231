@@ -1,25 +1,30 @@
-export function initModals() {
-    const triggerButtons = document.querySelectorAll('.info-btn');
-    const closeButtons = document.querySelectorAll('.close-modal');
+import { initNavigation } from './navigation.js';
+import { populateCityDropdown } from './weather.js';
 
-    triggerButtons.forEach(btn => {
-        btn.addEventListener('click', () => {
-            const targetModalId = btn.getAttribute('data-modal');
-            const targetModal = document.getElementById(targetModalId);
-            if (targetModal) targetModal.classList.remove('hidden');
+document.addEventListener('DOMContentLoaded', () => {
+    initNavigation();
+    const citySelect = document.getElementById('city-select');
+    const alertsDisplay = document.getElementById('alerts-display');
+    
+    if (citySelect) {
+        populateCityDropdown(citySelect);
+        citySelect.addEventListener('change', (e) => {
+            if (!e.target.value) return;
+            const cityData = JSON.parse(e.target.value);
+            alertsDisplay.innerHTML = `<h3>${cityData.name} Alerts</h3><p>No active dangerous weather warnings for this sector at present.</p>`;
         });
-    });
+    }
 
-    closeButtons.forEach(btn => {
-        btn.addEventListener('click', () => {
-            btn.closest('.modal').classList.add('hidden');
+    // Modal Operations Management
+    const modal = document.getElementById('safety-modal');
+    const openBtn = document.getElementById('open-modal-btn');
+    const closeBtn = document.getElementById('close-modal-btn');
+
+    if (openBtn && modal && closeBtn) {
+        openBtn.addEventListener('click', () => modal.classList.remove('hidden'));
+        closeBtn.addEventListener('click', () => modal.classList.add('hidden'));
+        window.addEventListener('click', (e) => {
+            if (e.target === modal) modal.classList.add('hidden');
         });
-    });
-
-    // Close window if clicking background
-    window.addEventListener('click', (e) => {
-        if (e.target.classList.contains('modal')) {
-            e.target.classList.add('hidden');
-        }
-    });
-}
+    }
+});
