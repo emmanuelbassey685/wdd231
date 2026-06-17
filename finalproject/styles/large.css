@@ -1,9 +1,7 @@
-/* Hide menu toggle on larger screens */
 #menu-toggle {
     display: none;
 }
 
-/* Navigation */
 nav {
     display: flex;
     flex-direction: row;
@@ -14,20 +12,18 @@ nav {
 
 nav a {
     padding: 0.5rem 1rem;
-    border: none;
+    border: 0;
     border-radius: 4px;
 }
 
-/* Main Layout */
 main {
-    max-width: 1100px;
-    margin: 0 auto;
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 1.5rem;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
-/* Full-width sections */
 .hero,
 h2,
 .search-box,
@@ -37,14 +33,12 @@ h2,
     grid-column: 1 / -1;
 }
 
-/* Forecast cards layout */
 .forecast-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
 }
 
-/* Confirmation page */
 .confirmation-page {
     display: flex;
     justify-content: center;

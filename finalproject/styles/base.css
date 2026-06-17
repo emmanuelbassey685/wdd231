@@ -15,12 +15,12 @@
 
 body {
     margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     background-color: var(--secondary-color);
     color: var(--dark-text);
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
 }
 
 /* Header */
@@ -56,10 +56,10 @@ header {
 nav {
     display: none;
     flex-direction: column;
-    width: 100%;
     position: absolute;
     top: 70px;
     left: 0;
+    width: 100%;
     background-color: var(--primary-color);
     z-index: 1000;
 }
@@ -85,12 +85,12 @@ main {
     padding: 1rem;
 }
 
-/* Hero Section */
+/* Hero */
 .hero {
     position: relative;
     margin-bottom: 1.5rem;
-    border-radius: 8px;
     overflow: hidden;
+    border-radius: 8px;
 }
 
 .hero img {
@@ -110,21 +110,21 @@ main {
 
 /* Cards */
 .card {
-    padding: 1.5rem;
     margin-bottom: 1.5rem;
+    padding: 1.5rem;
     background: var(--light-text);
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 
-/* Forms and Buttons */
+/* Forms */
 .search-box select,
 .subscription-box input,
 .subscription-box button,
 #open-modal-btn {
     width: 100%;
-    padding: 0.8rem;
     margin: 0.5rem 0;
+    padding: 0.8rem;
     border-radius: 4px;
 }
 
@@ -138,14 +138,14 @@ main {
     border: none;
     background-color: var(--primary-color);
     color: var(--light-text);
-    cursor: pointer;
     font-weight: bold;
+    cursor: pointer;
 }
 
 /* Alert Banner */
 .alert-banner {
-    padding: 1rem;
     margin-bottom: 1rem;
+    padding: 1rem;
     background-color: #d1ecf1;
     border-left: 5px solid #17a2b8;
     border-radius: 4px;
@@ -154,15 +154,10 @@ main {
 /* Modal */
 .modal {
     position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-
+    inset: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-
     background: rgba(0, 0, 0, 0.5);
     z-index: 2000;
 }
@@ -191,12 +186,13 @@ main {
 /* Footer */
 footer {
     padding: 1rem;
-    background-color: #222;
-    color: #ccc;
     text-align: center;
     font-size: 0.9rem;
+    background-color: #222;
+    color: #ccc;
 }
 
+/* Desktop */
 @media (min-width: 768px) {
     #menu-toggle {
         display: none;
@@ -211,7 +207,7 @@ footer {
     }
 
     nav a {
-        border-top: none;
         padding: 0.5rem 1rem;
+        border-top: none;
     }
 }
