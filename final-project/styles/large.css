@@ -1,0 +1,39 @@
+#menu-toggle { display: none; }
+
+nav {
+    display: flex !important;
+    flex-direction: row;
+    position: static;
+    width: auto;
+    background: none;
+}
+
+nav a {
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+}
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1.5rem;
+}
+
+.hero, h2, .search-box, .forecast-grid, #alerts-container {
+    grid-column: span 2;
+}
+
+.forecast-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.confirmation-page {
+    grid-column: span 2;
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to SkyPulse Weather. Access professional microclimate data streams and live field instrumentation monitoring across global telemetry grids.">
+    <meta name="author" content="Bassey, Emmanuel">
+    <meta property="og:description" content="Access professional microclimate data streams and live field instrumentation monitoring.">>
+    <meta property="og:title" content="Weather Forecast | SkyPulse Weather">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://emmanuelbassey685.github.io/wdd231/final-project/images/favicon.ico">
+    <meta property="og:url" content="https://emmanuelbassey685.github.io/wdd231/final-project/">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css" media="(min-width: 768px)">
+    <script src="scripts/main.js" type="module"></script>
+    <script src="scripts/forecast.js" defer></script>
+    <script src="scripts/modal.js" type="module"></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/storage.js" defer></script>
+    <title>SkyWatch | Subscription Confirmed</title>
+</head>
+<body>
+    <main class="confirmation-page">
+        <div class="card response-card">
+            <h1>🎉 Thank You for Subscribing!</h1>
+            <p>We have successfully registered your email: <strong id="user-email">your email</strong></p>
+            <p>You will now receive daily weather updates and critical alerts directly to your inbox.</p>
+            <p>Welcome to our network, <strong id="user-display">Explorer</strong>.</p>
+            <p>A confirmation email has been dispatched to: <span id="email-display">your inbox</span>.</p>
+            <a href="index.html" class="btn-link">Return to Dashboard</a>
+        </div>
+    </main>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const email = params.get('email') || 'Subscriber';
+        document.getElementById('user-email').textContent = email;
+    </script>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Bassey, Emmanuel / SkyPulse Weather Project. All rights reserved.</p>
+        <p>Last Modified: <span id="last-modified"></span></p>
+    </footer>
+</body>
+</html>

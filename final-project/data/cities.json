@@ -1,0 +1,19 @@
+{
+  "cities": [
+    {"name": "New York", "id": "ny", "lat": 40.7128, "lon": -74.0060},
+    {"name": "London", "id": "lon", "lat": 51.5074, "lon": -0.1278},
+    {"name": "Tokyo", "id": "tok", "lat": 35.6762, "lon": 139.6503},
+    {"name": "Sydney", "id": "syd", "lat": -33.8688, "lon": 151.2093},
+    {"name": "Los Angeles", "id": "la", "lat": 34.0522, "lon": -118.2437},
+    {"name": "Paris", "id": "par", "lat": 48.8566, "lon": 2.3522},
+    {"name": "Berlin", "id": "ber", "lat": 52.5200, "lon": 13.4050},
+    {"name": "Moscow", "id": "mos", "lat": 55.7558, "lon": 37.6173},
+    {"name": "Rio de Janeiro", "id": "rio", "lat": -22.9068, "lon": -43.1729},
+    {"name": "Cape Town", "id": "cap", "lat": -33.9249, "lon": 18.4241},
+    {"name": "Toronto", "id": "tor", "lat": 43.6532, "lon": -79.3832},
+    {"name": "Dubai", "id": "dub", "lat": 25.276987, "lon": 55.296249},
+    {"name": "Singapore", "id": "sin", "lat": 1.3521, "lon": 103.8198},
+    {"name": "Hong Kong", "id": "hkg", "lat": 22.3193, "lon": 114.1694},
+    {"name": "Bangkok", "id": "bkk", "lat": 13.7563, "lon": 100.5018}
+  ]
+}

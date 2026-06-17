@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to SkyPulse Weather. Access professional microclimate data streams and live field instrumentation monitoring across global telemetry grids.">
+    <meta name="author" content="Bassey, Emmanuel">
+    <meta property="og:description" content="Access professional microclimate data streams and live field instrumentation monitoring.">>
+    <meta property="og:title" content="Weather Forecast | SkyPulse Weather">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://emmanuelbassey685.github.io/wdd231/final-project/images/favicon.ico">
+    <meta property="og:url" content="https://emmanuelbassey685.github.io/wdd231/final-project/">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css" media="(min-width: 768px)">
+    <script src="scripts/main.js" type="module"></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/forecast.js" defer></script>
+    <script src="scripts/modal.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <title>SkyWatch | Weather Alerts</title>
+</head>
+<body>
+    <header>
+        <div class="logo-area">
+            <img src="images/logo.webp" alt="SkyWatch Logo" width="50" height="50">
+            <p>SkyWatch</p>
+        </div>
+        <button id="menu-toggle" aria-label="Toggle Navigation">☰</button>
+        <nav id="main-nav">
+            <a href="index.html">Home</a>
+            <a href="forecast.html">Forecast</a>
+            <a href="alerts.html" class="active">Alerts</a>
+        </nav>
+    </header>
+    <main>
+        <section class="alerts-container">
+            <h1>Active Weather Advisories</h1>
+            <div class="alert-box high-priority">
+                <h2>⚠️ High Wind Advisory</h2>
+                <p>Expect wind gusts up to 45 mph from 6:00 PM tonight until tomorrow morning. Secure outdoor objects.</p>
+            </div>
+            <div class="alert-box standard-priority">
+                <h3>ℹ️ Flood Watch</h3>
+                <p>Heavy rainfall expected in low-lying areas. Stay tuned to local news channels for updates.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Bassey, Emmanuel / SkyPulse Weather Project. All rights reserved.</p>
+        <p>Last Modified: <span id="last-modified"></span></p>
+    </footer>
+</body>
+</html>
